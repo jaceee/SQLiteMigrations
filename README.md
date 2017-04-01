@@ -97,7 +97,13 @@ Be careful not to try to begin a transaction since this would cause an error.
 
 ### NuGet
 
-Coming soon!
+To install SQLiteMigrations, run the following command in the Package Manager Console
+
+```
+Install-Package MallaCreativa.SQLiteMigrations
+```
+
+Or just go to the NuGet package gallery and add it to your project.
 
 ## TODO
 
