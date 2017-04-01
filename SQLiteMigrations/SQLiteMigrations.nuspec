@@ -5,9 +5,9 @@
 
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <description>$description$</description>
+    <authors>Jonatan Cardona Casas</authors>
+    <owners>Jonatan Cardona Casas</owners>
+    <description>SQLiteMigrations is a .NET Portable Class Library (PCL) to enable database schema management for SQLitePCL.raw built on top of SQLitePCL.pretty.</description>
 
     <projectUrl>https://github.com/jaceee/SQLiteMigrations</projectUrl>
     <licenseUrl>https://github.com/jaceee/SQLiteMigrations/blob/master/LICENSE</licenseUrl>
