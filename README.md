@@ -107,10 +107,10 @@ Or just go to the NuGet package gallery and add it to your project.
 
 ## TODO
 
-[x] Implement schema upgrading
-[ ] Implement schema downgrading
-[ ] Flexibility on schema migration process
-[ ] Information of schema version (and if it has migrations table)
+ * ~~Implement schema upgrading~~
+ * Implement schema downgrading
+ * Flexibility on schema migration process
+ * Information of schema version (and if it has migrations table)
 
 Helping hands are totally wellcome.
 
