@@ -1,17 +1,26 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>MallaCreativa.SQLiteMigrations</id>
+
     <version>$version$</version>
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/jaceee/SQLiteMigrations/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/jaceee/SQLiteMigrations</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial version.</releaseNotes>
+
+    <projectUrl>https://github.com/jaceee/SQLiteMigrations</projectUrl>
+    <licenseUrl>https://github.com/jaceee/SQLiteMigrations/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
     <copyright>Copyright 2017</copyright>
-    <tags>SQLite PCL</tags>
+
+    <releaseNotes>Initial version.</releaseNotes>
+    <tags>SQLite Migration PCL</tags>
+
+    <dependencies>
+      <dependency id="SQLitePCL.pretty" version="1.1.0" />
+      <dependency id="SQLitePCLRaw.core" version="1.1.0" />
+    </dependencies>
   </metadata>
 </package>
