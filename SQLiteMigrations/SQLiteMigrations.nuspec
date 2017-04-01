@@ -3,8 +3,8 @@
   <metadata>
     <id>MallaCreativa.SQLiteMigrations</id>
 
-    <version>$version$</version>
-    <title>$title$</title>
+    <version>0.1.1</version>
+    <title>SQLiteMigrations</title>
     <authors>Jonatan Cardona Casas</authors>
     <owners>Jonatan Cardona Casas</owners>
     <description>SQLiteMigrations is a .NET Portable Class Library (PCL) to enable database schema management for SQLitePCL.raw built on top of SQLitePCL.pretty.</description>
