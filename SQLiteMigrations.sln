@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteMigrations", "SQLiteMigrations\SQLiteMigrations.csproj", "{62299EFC-D906-4448-8F5E-9456B3BE6017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteMigrations.Tests", "SQLiteMigrations.Tests\SQLiteMigrations.Tests.csproj", "{B5B6FE8B-8016-4406-9EC7-008913BE1CBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62299EFC-D906-4448-8F5E-9456B3BE6017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62299EFC-D906-4448-8F5E-9456B3BE6017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62299EFC-D906-4448-8F5E-9456B3BE6017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62299EFC-D906-4448-8F5E-9456B3BE6017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B6FE8B-8016-4406-9EC7-008913BE1CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B6FE8B-8016-4406-9EC7-008913BE1CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B6FE8B-8016-4406-9EC7-008913BE1CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B6FE8B-8016-4406-9EC7-008913BE1CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
