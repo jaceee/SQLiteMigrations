@@ -78,14 +78,14 @@ namespace SQLiteMigrations
         bool migrationsTableExists(SQLiteDatabaseConnection db)
         {
             var sql = "SELECT COUNT(*) FROM sqlite_master WHERE name = '__migrations' AND type = 'table'";
-			var result = db.Query(sql).SelectScalarInt().FirstOrDefault();
+            var result = db.Query(sql).SelectScalarInt().FirstOrDefault();
 
             return result > 0;
         }
 
-		void createMigrationsTable(SQLiteDatabaseConnection db)
+        void createMigrationsTable(SQLiteDatabaseConnection db)
         {
-            
+
             var ceate_sql = "CREATE TABLE __migrations ( id INT NOT NULL )";
             db.Execute(ceate_sql);
 
@@ -93,7 +93,7 @@ namespace SQLiteMigrations
             db.Execute(insert_sql);
         }
 
-		long currentMigration(SQLiteDatabaseConnection db)
+        long currentMigration(SQLiteDatabaseConnection db)
         {
             var sql = "SELECT id FROM __migrations ORDER BY id DESC LIMIT 1";
             var result = db.Query(sql).SelectScalarInt64().FirstOrDefault();
@@ -129,7 +129,7 @@ namespace SQLiteMigrations
                     var matches = Regex.Matches(p, @"(\d+)(?:_.+)?(?:\.sql)", RegexOptions.IgnoreCase);
                     if (matches.Count > 0)
                     {
-						return int.Parse(matches[0].Groups[1].Value) > current;
+                        return long.Parse(matches[0].Groups[1].Value) > current;
                     }
 
                     return false;
@@ -143,9 +143,9 @@ namespace SQLiteMigrations
 
                 foreach (var migration in migrations)
                 {
-					trace(string.Format("Ejecutando migración `{0}`", migration));
+                    trace(string.Format("Ejecutando migración `{0}`", migration));
 
-					if (!runMigration(db, migration))
+                    if (!runMigration(db, migration))
                     {
                         throw new Exception("Error executing some migrations.");
                     }
@@ -153,7 +153,7 @@ namespace SQLiteMigrations
             }
         }
 
-		bool runMigration(SQLiteDatabaseConnection db, string name)
+        bool runMigration(SQLiteDatabaseConnection db, string name)
         {
             var migration = Config.MigrationsProvider.GetMigration(name);
 
@@ -193,7 +193,7 @@ namespace SQLiteMigrations
                         break;
 
                     case 2:
-						down.Add(sql);
+                        down.Add(sql);
                         break;
                 }
             }
@@ -204,10 +204,10 @@ namespace SQLiteMigrations
             }
 
             var migration_sql = string.Join(" ", up).Trim();
-			if (string.IsNullOrEmpty(migration_sql))
-			{
-				throw new Exception("Empty migration.");
-			}
+            if (string.IsNullOrEmpty(migration_sql))
+            {
+                throw new Exception("Empty migration.");
+            }
 
             var id_sql = string.Format("INSERT INTO __migrations ( id ) VALUES ( {0} )", id);
 
